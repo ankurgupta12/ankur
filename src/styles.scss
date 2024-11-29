@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+  @apply text-24 ;
+}
+
+.text-24 {
+  @apply text-base;
+}
+
+.text-68 {
+  @apply text-[20px] md:text-[34px] leading-tight;
+}
+
+.text-54 {
+  @apply text-[18px] md:text-[27px] leading-tight;
+}
+
+.rounded-section {
+
+  @apply grid grid-cols-1 md:grid-cols-3 rounded-3xl p-8 pb-0 bg-[#f4f4f4] gap-6 mb-4 ;
+
+  img {
+    @apply block ;
+  }
+
+  .title-2 {
+    @apply pb-8 mt-8 lg:mt-auto;
+  }
+}
+
+.phone-box-s2 {
+  @apply shrink-0
+}
+
+.phone-box-s1 {
+  @apply h-full flex grow flex-col col-span-2;
+}
+
+.title-2 {
+  @apply text-54 text-[#645b51] font-bold;
+  span {
+    @apply text-black ;
+  }
+}
+
+.gray-section {
+  background: #fff url('/bg.jpg') 0 0 no-repeat;
+  @apply py-40 bg-cover text-white ;
+  h2 {
+    @apply mb-8;
+  }
+
+  a {
+    @apply mt-10 ;
+  }
+
+  .container {
+    @apply max-w-[500px] text-center ;
+  }
+}
+
+.title-1 {
+  @apply text-4xl font-bold;
+}
+
+.gray-box2 {
+  @apply p-8 rounded-xl bg-[#f4f4f4] text-[#464646] ;
+  h3 {
+    @apply font-bold mb-4 text-black ;
+  }
+}
+
+.footer {
+  @apply py-10 bg-[#141414] text-[#bebebe]  ;
+  ul {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+
+  }
+
+}
+
+.slider-btns {
+  @apply flex gap-4 mt-8;
+  button {
+    @apply border size-16 transition-all flex items-center justify-center rounded-full hover:bg-gray-100;
+  }
+}
+
+.footer-title {
+  @apply text-lg font-bold mb-4 text-white border-b pb-2 border-gray-700;
+}
+
+.phone-form {
+  input {
+    @apply py-2 lg:py-2 grow text-24 outline-0 w-[110px] xl:w-auto;
+  }
+
+  @apply flex border px-4 py-2 mt-8 rounded-2xl ;
+}
+
+
+.review {
+  @apply rounded-xl bg-[#f4f4f4] p-2 ;
+  &-content {
+    @apply bg-white p-6 rounded-xl ;
+    h3 {
+      @apply font-bold text-lg mb-4 ;
+    }
+  }
+
+  .testimonial {
+    @apply text-[#464646] text-sm;
+  }
+
+  .author {
+    @apply py-2 flex items-center ;
+    img {
+      @apply size-20;
+    }
+  }
+}

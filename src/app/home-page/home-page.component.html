@@ -1,0 +1,215 @@
+<div class="container">
+  <div class="py-4">
+    <img src="logo.png" class="w-32" alt="">
+  </div>
+  <!--    section 1-->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 py-10 items-center">
+    <div>
+      <h1 class="text-68 mb-4 font-bold">The simplest way to rent an apartment.</h1>
+      <p>For High Net Worth Tenants, only.</p>
+      <app-phone-form></app-phone-form>
+    </div>
+    <div><img src="img1.png" alt=""></div>
+  </div>
+  <!--    section-2-->
+  <div class="flex flex-col lg:flex-row lg:items-center justify-between py-10">
+    <div class="text-54 font-bold">
+      <div>You rent an apartment.</div>
+      <div class="text-primary"> We pay your deposit.</div>
+    </div>
+    <div class="lg:max-w-[280px] mt-4 md:mt-0">
+      <div>We make your renting experience fast, easy and stress free.</div>
+    </div>
+  </div>
+  <!--    section-3-->
+  <div class="rounded-section">
+    <div class="phone-box-s1">
+      <div class="font-bold">
+        Why us?
+        <div class="text-primary">#1</div>
+      </div>
+      <div class="title-2">
+        You shortlist the property. <span>We pay your deposit.</span> In a few steps.
+      </div>
+    </div>
+    <div class="phone-box-s2 ">
+      <img src="box1.png" alt="">
+    </div>
+  </div>
+  <!--    section-4-->
+  <div class="rounded-section">
+    <div class="phone-box-s1">
+      <div class="font-bold">
+        Why us?
+        <div class="text-primary">#2</div>
+      </div>
+      <div class="title-2">
+        Sign agreement, pay rent, report issues.<span>All on one platform.</span>
+      </div>
+    </div>
+    <div class="phone-box-s2">
+      <img src="box2.png" alt="">
+    </div>
+  </div>
+  <!--    section-5-->
+  <div class="rounded-section">
+    <div class="phone-box-s1">
+      <div class="font-bold">
+        Why us?
+        <div class="text-primary">#3</div>
+      </div>
+      <div class="title-2">
+        No upfront brokerage.<span>Pay along with rent.</span>
+      </div>
+    </div>
+    <div class="phone-box-s2">
+      <img src="box3.png" alt="">
+    </div>
+  </div>
+
+</div>
+<div class="gray-section">
+  <div class="container">
+    <div class="w-full md:w-2/3 mx-auto">
+      <h2 class="text-68 font-bold text-white">
+        On a mission to fix the broken renting experience. <span
+        class="text-secondary"> Open to only selected few.</span>
+      </h2>
+      <p>From move in to move out, and everything in between. We are your partners throughout, unlike traditional
+        brokers.</p>
+
+      <a class="px-6 py-3.5 inline-block rounded-2xl bg-primary text-white">Get Started</a>
+    </div>
+  </div>
+</div>
+<div class="container py-10">
+  <h2 class="title-1 text-primary">Inside a NODEPOSIT<br>
+    partnership: <span class="text-black">costs and fees</span></h2>
+  <div class="py-10">Once a deposit is paid, the following charges and costs will apply.</div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="gray-box2">
+      <h3>Agreement charges</h3>
+      <p>Standard charges to execute an agreement to ensure your rights are protected.
+      </p>
+    </div>
+    <div class="gray-box2">
+      <h3>Platform fees</h3>
+      <p>Instead of an upfront brokerage fee, pay a nominal monthly fee along with your rent.
+
+      </p>
+    </div>
+    <div class="gray-box2">
+      <h3>Repair costs</h3>
+      <p>Transparent and pre-decided charges to ensure restoration of property to the original state
+
+
+      </p>
+    </div>
+    <div class="gray-box2">
+      <h3>Closing costs</h3>
+      <p>These are required based on the apartment rules. Some apartments charge move-out fees
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container py-10">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+    <div class="col-span-1 pr-10">
+      <h2 class="text-3xl font-bold "><span
+        class="text-primary">Join <strong>NO</strong>Deposit customers</span> who moved without hassle
+      </h2>
+      <div class="slider-btns">
+        <button (click)="splide.getSplideInstance().go('-1')" class="slider-btn"><i class="fa fa-chevron-left"></i>
+        </button>
+        <button (click)="splide.getSplideInstance().go('+1')" class="slider-btn"><i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="col-span-2">
+      <splide [options]="sliderOptions" #splide>
+        <splide-slide>
+          <div class="review">
+            <div class="review-content">
+              <h3>Top notch team, top notch product</h3>
+              <div class="text-sm text-[#464646]">Metaforms has been a gamechanger in our journey of
+                optimising our
+                user funnels.
+                The level of attention to
+                detail the team brings with pro-activeness in understanding the nuances of business is exemplary. 
+              </div>
+            </div>
+            <div class="author">
+              <div><img src="face.png" alt=""></div>
+              <div><h4 class="font-bold">Apoorva Jain </h4>
+                <div class="text-gray-400">Porter</div>
+              </div>
+            </div>
+          </div>
+        </splide-slide>
+        <splide-slide>
+          <div class="review">
+            <div class="review-content">
+              <h3>Top notch team, top notch product</h3>
+              <div class="testimonial">Metaforms has been a gamechanger in our journey of
+                optimising our
+                user funnels.
+                The level of attention to
+                detail the team brings with pro-activeness in understanding the nuances of business is exemplary. 
+              </div>
+            </div>
+            <div class="author">
+              <div><img src="face.png" alt=""></div>
+              <div><h4 class="font-bold">Apoorva Jain </h4>
+                <div class="text-gray-400">Porter</div>
+              </div>
+            </div>
+          </div>
+        </splide-slide>
+      </splide>
+    </div>
+  </div>
+</div>
+<div class="py-10 bg-[#f6f5f4]">
+  <div class="container">
+    <div class="bg-white p-8 rounded-2xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+        <div>
+          <h4 class="font-bold">Looking for a tenant?</h4>
+          <h3 class="text-54 font-bold mt-16  mb-6">Find your ideal tenant <span
+            class="text-secondary">with ease and confidence.</span></h3>
+          <p>Prevent renting to unreliable tenants when you rent out with <strong>NO</strong>DEPOSIT</p>
+          <app-phone-form></app-phone-form>
+        </div>
+        <div><img src="g1.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="grid  grid-cols-2 gap-4 md:gap-20 ">
+      <div>
+        <div class="footer-title">Terms & Privacy</div>
+        <ul class="">
+          <li><a href="">Trust and safety</a></li>
+          <li><a href="">Privacy policy</a></li>
+          <li><a href="">Terms of service</a></li>
+          <li><a href="">Notice of collection</a></li>
+          <li><a href="">Do not sell my info</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Contact Us</div>
+        <div class="text-sm md:text-base">
+          <a href="mailto:hello@nodeposit.app">hello&#64;nodeposit.app</a>
+          <div class="flex flex-col mt-4">
+            <span>Copyright Notice</span>
+            <span>No Deposit is a trademark of Float Digital Finserv Private Limited</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
