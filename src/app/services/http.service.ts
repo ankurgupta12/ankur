@@ -11,8 +11,6 @@ export class HttpService {
     @Inject(BASE_API_URL) private  baseUrl: string) { }
 
   saveData(data:any){
-    return this.httpClient.post(`${this.baseUrl}addUser`,data,{ headers: 
-      new HttpHeaders( 'Access-Control-Allow-Origin')
-    })
+    return this.httpClient.post(`${this.baseUrl}addUser`,data)
   }
 }
