@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HomePageComponent} from './home-page/home-page.component';
 
@@ -9,14 +9,7 @@ import {HomePageComponent} from './home-page/home-page.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'ankur';
-
-  ngOnInit() {
-    if (window.location.protocol === 'https:') {
-      // Redirect from HTTPS to HTTP
-      const httpUrl = window.location.href.replace('https://', 'http://');
-      window.location.replace(httpUrl);
-    }
-  }
+  
 }
