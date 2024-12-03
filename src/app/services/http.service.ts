@@ -11,6 +11,6 @@ export class HttpService {
     @Inject(BASE_API_URL) private  baseUrl: string) { }
 
   saveData(data:any){
-    return this.httpClient.post(`${this.baseUrl}addUser`,data)
+    return this.httpClient.post(`/no-deposite/addUser`,data)
   }
 }
