@@ -1,11 +1,11 @@
 {
-    "/addUser": {
+    "/adduser": {
       "target": "http://226.244.72.148.host.secureserver.net:8080/no-deposite", 
       "secure": false,                   
       "changeOrigin": true,             
       "logLevel": "debug",               
       "pathRewrite": {
-        "^/addUser": ""                     
+        "^/no-deposite": ""                     
       }
     }
   }
